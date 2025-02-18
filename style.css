@@ -306,3 +306,302 @@ section{
 }
 
 
+
+
+
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}*/
+
+/* Background with Linear Gradient */
+/*.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
+    padding: none;
+}*/
+
+/* About Container */
+.about-container {
+    background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top:85px;
+}
+
+/* Heading */
+.about-container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Paragraph */
+.about-container p {
+    font-size: 18px;
+    color: #555;
+    margin: 15px 0;
+    line-height: 1.6;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Highlight */
+.highlight {
+    font-weight: bold;
+    color: rgb(109,67, 0);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: rgb(109,67, 0);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    animation: scaleIn 1s ease-in-out;
+}
+
+.btn:hover {
+    background: wheat;
+    transform: scale(1.1);
+    color: rgb(109,67, 0);
+    border: 3px solid rgb(109,67, 0);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Scale-in Button Animation */
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+
+
+
+ 
+ .skills-container {
+            width: 95%;
+            background-color: linear-gradient(to left, rgb(255,255,255), rgb(254,215,173));
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            margin-top: none;
+        }
+        .skills-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: rgb(109,67,0);
+        }
+        .skill {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .skill-name {
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .skill-logo {
+            width: 40px;
+            height: 40px;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 12px;
+            background: white;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-top: 5px;
+            position: relative;
+        }
+        .progress {
+            height: 100%;
+            background: rgb(109,67,0);
+            position: relative;
+        }
+        .progress-text {
+            position: absolute;
+            right: 5px;
+            top: -20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+        }
+        .description {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #555;
+        }
+        
+        #img1 {
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */ /* Ensure the background is transparent */
+    border: none; /* Remove any border */
+    position: relative; /* For potential absolute positioning if needed */
+    top:30%; /* Move the image down by 50% of its container's height */
+    transform: translateY(-50%); /* Adjust the position to truly center it vertically */
+    
+}
+
+
+
+
+
+.projects-section {
+            text-align: center;
+            padding: 0;
+        }
+        .projects-section h2 {
+            font-size: 36px;
+            color: rgb(109, 67, 0);
+            margin-bottom: 20px;
+        }
+        .projects-container {
+            display: grid;
+           /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .project-card {
+            background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(109, 67, 0);
+            margin-bottom: 10px;
+        }
+        .project-description {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .project-link {
+            display: inline-block;
+            text-decoration: none;
+            background: rgb(109, 67, 0);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .project-link:hover {
+            background: rgb(150, 90, 10);
+        }
+        #img{
+          width: 100%;
+        }
+         .custom-text {
+          color: rgb(109,67,0); 
+        }
+        .custom-border {
+          border-color: rgb(109,67,0); 
+          
+        }
+        .custom-button {
+          background-color: rgb(109,67,0); 
+          color: white;
+          }
+        .custom-button:hover {
+          background-color: rgb(90,55,0);
+          }
+          #div1{
+            background-color: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));;
+          }
+          
+          
+          .container1 {
+            background-color: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-top: 100px;
+            
+        }
+        #h2 {
+            text-align: center;
+            color: rgb(109,67,0);
+        }
+        p {
+            text-align: center;
+            color: #666;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin: 10px 0 5px;
+            color: rgb(109,67,0);
+        }
+        #inp, textarea {
+            width: calc(100% - 5px);
+            padding: 8px;
+            border: 3px solid black;
+            border-radius: 5px;
+            outline: none;
+            box-sizing: border-box;
+            background-color: rgb(109,67, 0);
+            color: white;
+        }
+        textarea {
+            resize: vertical;
+        }
+        #btn2 {
+            width: 100%;
+            background-color: rgb(109,67,0);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: rgb(90,55,0);
+        }

@@ -7,6 +7,7 @@
     <title>Vedants Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <nav>
@@ -24,14 +25,14 @@
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
+        <a name="home"></a>
         <div class="dropdown">
             <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Services</a>
-                <a href="">Blogs</a>
-                <a href="">Contact Us</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skill">Skills</a>
+                <a href="#project">Projects</a>
+                <a href="#contact">Contact Us</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
@@ -52,12 +53,99 @@ Hi, I’m Vedant Soni, a 14-year-old web designer and developer with a passion f
                         <a href="https://www.instagram.com/vedant_soni2024?igsh=eWhnOHpnZXY1bWxo"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
-                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <div>
                         <button>Read More</button>
                     </div>
                 </div>
             </div>
         </section>
+        <img src="coffee2.png" id="img1">
+          <!--<section class="about-section">-->
+            <a name="about"></a>
+    <div class="about-container">
+      <h2 class="fade-in">About Me</h2>
+      <p class="slide-in">
+        Hi! I'm a passionate <span class="highlight">web developer</span> who loves crafting interactive and beautiful digital experiences.
+        With a deep love for <strong>UI/UX</strong>, animations, and smooth user flows, I create designs that feel seamless and engaging.
+      </p>
+      <a href="#contact" class="btn">Let's Connect</a>
+    </div>
+  <!--</section>-->
+  <img src="coffee3.png" id="img1">
+  <a name="skill"></a>
+   <div class="skills-container">
+   <div class="skills-header">My Creative Skillset</div>
+   <p class="description">I strive to create clean, efficient, and visually stunning web experiences. My skills reflect my passion for design and development.</p>
+
+   <div class="skill">
+     <div class="skill-name">
+       <img class="skill-logo" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Logo"> HTML
+     </div>
+     <div class="progress-bar">
+       <div class="progress" style="width: 95%;"></div>
+       <span class="progress-text">95%</span>
+     </div>
+   </div>
+
+   <div class="skill">
+     <div class="skill-name">
+       <img class="skill-logo" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Logo"> CSS
+     </div>
+     <div class="progress-bar">
+       <div class="progress" style="width: 90%;"></div>
+       <span class="progress-text">90%</span>
+     </div>
+   </div>
+
+   <div class="skill">
+     <div class="skill-name">
+       <img class="skill-logo" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS Logo"> JavaScript
+     </div>
+     <div class="progress-bar">
+       <div class="progress" style="width: 85%;"></div>
+       <span class="progress-text">85%</span>
+     </div>
+   </div>
+ </div>
+ <img src="project.png" id="img">
+ <a name="project"></a>
+ <section class="projects-section">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <div class="project-title">E-Commerce Website</div>
+      <p class="project-description">A feature-rich online shopping platform with secure checkout, product filtering, and user authentication.</p>
+      <a href="#" class="project-link">View Project</a>
+    </div>
+    <div class="project-card">
+      <div class="project-title">Calculator App</div>
+      <p class="project-description">A simple yet powerful calculator app that supports basic arithmetic operations with a sleek UI.</p>
+      <a href="#" class="project-link">View Project</a>
+    </div>
+    <div class="project-card">
+      <div class="project-title">Snake Game</div>
+      <p class="project-description">A fun and interactive Snake game built with JavaScript, featuring smooth controls and increasing difficulty.</p>
+      <a href="#" class="project-link">View Project</a>
+    </div>
+  </div>
+</section>
+<a name="contact"></a>
+  <div class="container1">
+   <h2 id="h2">Contact Me</h2>
+   <p>I'd love to hear from you! Feel free to reach out.</p>
+   <form>
+     <label for="name">Name</label>
+     <input type="text" id="inp" name="name" alt="Your name" required>
+
+     <label for="email">Email</label>
+     <input type="email" id="inp" name="email" alt="Your E-mail" required>
+
+     <label for="message">Message</label>
+     <textarea id="inp" name="message" rows="4"  required></textarea>
+
+     <button id="btn2" type="submit">Send Message</button>
+   </form>
+ </div>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init({offset:0});
