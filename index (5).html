@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <nav>
@@ -16,12 +17,11 @@
                 <span>Vedant</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Us</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skill">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#project">Project</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Us</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
@@ -66,7 +66,7 @@ Hi, I’m Vedant Soni, a 14-year-old web designer and developer with a passion f
       <h2 class="fade-in">About Me</h2>
       <p class="slide-in">
         Hi! I'm a passionate <span class="highlight">web developer</span> who loves crafting interactive and beautiful digital experiences.
-        With a deep love for <strong>UI/UX</strong>, animations, and smooth user flows, I create designs that feel seamless and engaging.
+        With a deep love for <strong>UI/UX</strong>, animations, and smooth user flows, I create designs that feel seamless and engaging.Love you guys pls support me from<br>  <a href="https://www.instagram.com/vedant_soni2024?igsh=eWhnOHpnZXY1bWxo"><i id="i1" class="fa-brands fa-instagram"></i></a>
       </p>
       <a href="#contact" class="btn">Let's Connect</a>
     </div>
@@ -127,6 +127,11 @@ Hi, I’m Vedant Soni, a 14-year-old web designer and developer with a passion f
       <p class="project-description">A fun and interactive Snake game built with JavaScript, featuring smooth controls and increasing difficulty.</p>
       <a href="#" class="project-link">View Project</a>
     </div>
+    <div class="project-card">
+  <div class="project-title">Drawing App</div>
+  <p class="project-description">Easy to draw with a drawing app. i created the drawing app for kids easy to use multiplecolor options</p>
+  <a href="#" class="project-link">View Project</a>
+</div>
   </div>
 </section>
 <a name="contact"></a>
@@ -143,9 +148,17 @@ Hi, I’m Vedant Soni, a 14-year-old web designer and developer with a passion f
      <label for="message">Message</label>
      <textarea id="inp" name="message" rows="4"  required></textarea>
 
-     <button id="btn2" type="submit">Send Message</button>
+     <button id="btn2" type="submit" onclick=feed()>Send Message</button>
    </form>
  </div>
+  <footer class="footer">
+   <h2>Make me feel better</h2>
+   <p>© 2025 Vedant | All Rights Reserved</p>
+   <div class="floating-text">Beautiful</div>
+   <div class="floating-text">coffee</div>
+   <div class="floating-text">Luxury</div>
+   <div class="floating-text">Cute</div>
+ </footer>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init({offset:0});
@@ -159,6 +172,25 @@ Hi, I’m Vedant Soni, a 14-year-old web designer and developer with a passion f
                 const navbar = document.querySelector(".dropdown")
                 navbar.style.transform = "translateY(-500px)"
             }
+        </script>
+        <script>
+          $(document).ready(function() {
+  function floatText() {
+    $('.floating-text').each(function() {
+      let newX = Math.random() * ($('.footer').width() - $(this).width());
+      let newY = Math.random() * ($('.footer').height() - $(this).height());
+      $(this).animate({ left: newX, top: newY }, 5000, function() {
+        floatText();
+      });
+    });
+  }
+  $('.floating-text').css({ position: 'absolute' });
+  floatText();
+});
+
+function feed() {
+  alert("Thank you for you Feedback");
+}
         </script>
 </body>
 </html>
